@@ -36,3 +36,67 @@ main{
     background-position: center;
 }
 
+.cuadrado{
+    color: rgb(255, 254, 254);
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+   
+}
+
+.cuadrado:hover{
+    color: rgb(209, 133, 133);
+}
+
+.bar{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+    margin-top: 1em;
+}
+
+.status{
+    margin-top: 20px;
+    background: rgb(19, 197, 185);
+    color: white;
+    text-align: center;
+}
+
+h3{
+    color: #74d096;
+    font-family: "Mochiy Pop One", sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.accion{
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+button{
+padding: 15px 32px;
+color: rgb(255, 255, 255);
+background-color: #00ff95;
+font-family: "Mochiy Pop One", sans-serif;
+border: #181818;
+transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #00ff95;
+    color: rgb(204, 166, 166);
+    cursor: pointer;
+}
+
+#ganadasX,#winner,
+#ganadasY,#empates{
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+audio{
+    background-color: darkturquoise;
+}
