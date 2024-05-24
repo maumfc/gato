@@ -1,14 +1,13 @@
 const buttons = document.querySelectorAll(".cuadrado");
 let turno = true;
 let in_game = true;
-const reiniciar = document.querySelector("#reiniciar");
+const btnReiniciar = document.getElementById("reiniciar")
 let ganadasx = 0;
 let ganadas0 = 0;
 let empates = 0;
 function update() {
     document.querySelector("#ganadasX").textContent = "Juegos ganados de X: " + ganadasx;
     document.querySelector("#ganadasY").textContent = "Juegos ganados de O: " + ganadas0;
-    document.querySelector("#empates").textContent = "Juegos con Empates: " + empates;
 }
 function jugarTurnoDeMaquina() {
     const celdasVacias = [];
@@ -44,11 +43,11 @@ for (let i = 0; i < buttons.length; i++) {
         }
     });
 }
-reiniciar.addEventListener("click", (e) => {
+btnReiniciar.addEventListener("click", () => {
+    
     in_game = true;
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].textContent = "";
-    }
+    let boton2 = Array.from(buttons)
+    boton2.forEach(borrar=>borrar.innerHTML="")
     document.querySelector("#winner").textContent = "";
     contador = 0;
 });
@@ -90,7 +89,6 @@ function mostrarResultado() {
         ganadas0++;
         update();
     } else {
-        document.querySelector("#winner").textContent = "Empate";
         empates++;
         update();
     }
