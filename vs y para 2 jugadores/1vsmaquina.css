@@ -46,6 +46,9 @@ main{
 
 .cuadrado:hover{
     color: rgb(209, 133, 133);
+    background-image: url(https://i.gifer.com/19wO.gif);
+    justify-content: center;
+    background-size: cover;
 }
 
 .bar{
@@ -64,7 +67,7 @@ main{
      }
 
 h3{
-    color: #1c44e6;
+    color: #1f25d1;
     font-family: "Mochiy Pop One", sans-serif;
     text-align: center;
     font-size: 25px;
